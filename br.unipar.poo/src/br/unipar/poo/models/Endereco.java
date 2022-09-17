@@ -1,17 +1,31 @@
 package br.unipar.poo.models;
 
 public class Endereco {
-    private String nome;
+    private String rua;
     private int id;
     private Cidade cidade;
+    private int nr;
 
-    public String getNome() {
-        return nome;
+    public String getRua() {
+        return rua;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setRua(String rua) {
+        this.rua = rua;
     }
+
+    public int getNr() {
+        return nr;
+    }
+
+    public void setNr(int nr) {
+        this.nr = nr;
+    }
+
+    public Endereco() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 
     public int getId() {
         return id;
@@ -29,16 +43,20 @@ public class Endereco {
         this.cidade = cidade;
     }
 
-    public Endereco(String nome, int id, Cidade cidade) {
-        this.nome = nome;
+    public Endereco(String rua, int id, Cidade cidade, int nr) {
+        this.rua = rua;
         this.id = id;
         this.cidade = cidade;
+        this.nr = nr;
     }
 
     @Override
     public String toString() {
-        return "Endereco{" + "nome=" + nome + ", id=" + id + ", cidade=" + cidade + '}';
+        return "Endereco{" + "rua=" + rua + ", id=" + id + ", cidade=" + cidade + ", nr=" + nr + '}';
     }
-    
+
+  
+
+   
     
 }

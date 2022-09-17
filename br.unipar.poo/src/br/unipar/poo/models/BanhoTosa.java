@@ -6,6 +6,10 @@ public class BanhoTosa {
     private Funcionario funcionario;
     private String dtMarcada;
 
+    public BanhoTosa() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public int getId() {
         return id;
     }
@@ -43,6 +47,13 @@ public class BanhoTosa {
         this.animal = animal;
         this.funcionario = funcionario;
         this.dtMarcada = dtMarcada;
+    }
+    
+    public void banho()
+    {   
+        animal.setTosa(true);
+    
+                
     }
 
     @Override

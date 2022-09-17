@@ -4,6 +4,10 @@ public class Pais {
     private int id;
     private String nome;
 
+    public Pais() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public int getId() {
         return id;
     }

@@ -5,6 +5,10 @@ public class Cidade {
     private String nome;
     private Estado estado;
 
+    public Cidade() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public int getId() {
         return id;
     }

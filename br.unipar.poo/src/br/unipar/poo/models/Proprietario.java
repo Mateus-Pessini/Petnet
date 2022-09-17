@@ -4,6 +4,8 @@ public class Proprietario extends Pessoa{
     
     private String cpf;
 
+
+
     public String getCpf() {
         return cpf;
     }

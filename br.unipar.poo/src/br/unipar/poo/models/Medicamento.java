@@ -8,6 +8,10 @@ public class Medicamento {
     private String dtVencimento;
     private Double vlMedicamento;
 
+    public Medicamento() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public int getId() {
         return id;
     }

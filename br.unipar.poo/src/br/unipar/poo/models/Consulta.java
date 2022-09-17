@@ -12,24 +12,27 @@ public class Consulta {
     private ArrayList<Exame> listExame = new ArrayList<>();
     private ArrayList<Medicamento> listMedicamento = new ArrayList<>();
     private String dtConsulta;
-    private Double vlExame;
-    private Double vlMedicamento;
-    private Double vlConsulta;
-    private Double vlVacina;
-    private Double vlTotal;
+    private Double vlExame = 0.0;
+    private Double vlMedicamento = 0.0;
+    private Double vlConsulta = 0.0;
+    private Double vlVacina = 0.0;
+    private Double vlTotal = 0.0;
     
-    public Consulta(Medico medico, Proprietario dono, Animal animal, String dtConsulta, Double vlExame, Double vlMedicamento, Double vlConsulta, Double vlVacina, Double vlTotal) {
+    public Consulta(Medico medico, Proprietario dono, Animal animal, String dtConsulta,  Double vlConsulta) {
         this.medico = medico;
         this.dono = dono;
         this.animal = animal;
         this.dtConsulta = dtConsulta;
-        this.vlExame = vlExame;
-        this.vlMedicamento = vlMedicamento;
         this.vlConsulta = vlConsulta;
-        this.vlVacina = vlVacina;
-        this.vlTotal = vlTotal;
+       
     }
-    
+
+    @Override
+    public String toString() {
+        return "Consulta{" + "medico=" + medico + ", dono=" + dono + ", animal=" + animal + ", listVacina=" + listVacina + ", listExame=" + listExame + ", listMedicamento=" + listMedicamento + ", dtConsulta=" + dtConsulta + ", vlExame=" + vlExame + ", vlMedicamento=" + vlMedicamento + ", vlConsulta=" + vlConsulta + ", vlVacina=" + vlVacina + ", vlTotal=" + vlTotal + '}';
+    }
+
+  
     public Double getVlExame() {
         return vlExame;
     }
