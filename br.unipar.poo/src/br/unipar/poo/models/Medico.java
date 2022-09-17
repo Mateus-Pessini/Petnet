@@ -29,7 +29,7 @@ public class Medico extends Pessoa {
     
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + super.getNome() + ", telefone=" + super.getTelefone() + ", dtNasc=" + getDtNasc() + ", endereco=" + getEndereco() + ", id= "+ super.getId() + ", crm=" + crm + ", disponivel=" + disponivel +'}';
+        return "Medico{" + "nome=" + super.getNome() + ", telefone=" + super.getTelefone() + ", dtNasc=" + getDtNasc() + ", endereco=" + getEndereco() + ", id= "+ super.getId() + ", crm=" + crm + ", disponivel=" + disponivel +'}';
     }
 
 }

@@ -28,7 +28,7 @@ public class Funcionario extends Pessoa{
 
     @Override
     public String toString() {
-        return "Funcionario{" + "cpf=" + cpf + ", matricula=" + matricula + '}';
+        return "Funcionário{" + "nome=" + super.getNome() + ", telefone=" + super.getTelefone() + ", dtNasc=" + getDtNasc() + ", endereco=" + getEndereco() + ", id= "+ super.getId() + ", cpf=" + cpf + ", matricula= "+ matricula +'}';
     }
 
     

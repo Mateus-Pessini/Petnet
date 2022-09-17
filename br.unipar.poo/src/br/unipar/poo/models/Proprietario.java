@@ -19,7 +19,7 @@ public class Proprietario extends Pessoa{
 
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + super.getNome() + ", telefone=" + super.getTelefone() + ", dtNasc=" + getDtNasc() + ", endereco=" + getEndereco() + ", id= "+ super.getId() + ", cpf=" + cpf + '}';
+        return "Proprietário{" + "nome=" + super.getNome() + ", telefone=" + super.getTelefone() + ", dtNasc=" + getDtNasc() + ", endereco=" + getEndereco() + ", id= "+ super.getId() + ", cpf=" + cpf + '}';
     }
     
 

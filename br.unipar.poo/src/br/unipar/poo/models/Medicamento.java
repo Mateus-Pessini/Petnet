@@ -1,10 +1,20 @@
 package br.unipar.poo.models;
 
 public class Medicamento {
+
+    private int id;
     private String nome;
     private int qtnMedic;
     private String dtVencimento;
     private Double vlMedicamento;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return nome;
@@ -38,7 +48,8 @@ public class Medicamento {
         this.vlMedicamento = vlMedicamento;
     }
 
-    public Medicamento(String nome, int qtnMedic, String dtVencimento, Double vlMedicamento) {
+    public Medicamento(int id, String nome, int qtnMedic, String dtVencimento, Double vlMedicamento) {
+        this.id = id;
         this.nome = nome;
         this.qtnMedic = qtnMedic;
         this.dtVencimento = dtVencimento;
@@ -47,8 +58,7 @@ public class Medicamento {
 
     @Override
     public String toString() {
-        return "Medicamento{" + "nome=" + nome + ", qtnMedic=" + qtnMedic + ", dtVencimento=" + dtVencimento + ", vlMedicamento=" + vlMedicamento + '}';
+        return "Medicamento{" + "id=" + id + ", nome=" + nome + ", qtnMedic=" + qtnMedic + ", dtVencimento=" + dtVencimento + ", vlMedicamento=" + vlMedicamento + '}';
     }
-    
-    
+
 }

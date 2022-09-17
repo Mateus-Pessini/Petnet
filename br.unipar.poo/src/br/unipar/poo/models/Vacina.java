@@ -1,10 +1,20 @@
 package br.unipar.poo.models;
 
 public class Vacina {
+
+    private int id;
     private String nome;
     private int qtnVacina;
     private String dtVencimento;
     private Double vlVacina;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return nome;
@@ -38,7 +48,8 @@ public class Vacina {
         this.vlVacina = vlVacina;
     }
 
-    public Vacina(String nome, int qtnVacina, String dtVencimento, Double vlVacina) {
+    public Vacina(int id, String nome, int qtnVacina, String dtVencimento, Double vlVacina) {
+        this.id = id;
         this.nome = nome;
         this.qtnVacina = qtnVacina;
         this.dtVencimento = dtVencimento;
@@ -47,8 +58,7 @@ public class Vacina {
 
     @Override
     public String toString() {
-        return "Vacina{" + "nome=" + nome + ", qtnVacina=" + qtnVacina + ", dtVencimento=" + dtVencimento + ", vlVacina=" + vlVacina + '}';
+        return "Vacina{" + "id=" + id + ", nome=" + nome + ", qtnVacina=" + qtnVacina + ", dtVencimento=" + dtVencimento + ", vlVacina=" + vlVacina + '}';
     }
-    
-    
+
 }
